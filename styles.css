@@ -7,16 +7,8 @@
 
 #banner_image
 {
-    background: url('images/bannière_république.png') center;
-    background-size: cover;
-    height:300px;
-}
-
-#banner_description{
-    color: solid black;
-    position: absolute;
-    left: 50px;
-    top: 50px;
+    width: ;
+    position: center;
 }
 
 nav{
