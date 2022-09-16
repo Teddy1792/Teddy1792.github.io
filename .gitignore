@@ -21,3 +21,8 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+
+# OS-specific files
+.DS_Store
+.Trashes
+Thumbs.db

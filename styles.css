@@ -1,0 +1,87 @@
+@font-face { /* instal the font on the website */
+    font-family: 'Acherusgrotesquefont';
+    src: url('acherusgrotesque-regular.otf');
+}
+
+
+
+#banner_image
+{
+    background: url('images/bannière_république.png') center;
+    background-size: cover;
+    height:300px;
+}
+
+#banner_description{
+    color: solid black;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+nav{
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    vertical-align: top;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+section{
+    display: inline-block;
+    position: relative;
+    left: 220px;
+    top: 30px;
+    width: 700px;
+    margin-left: 170px;
+    vertical-align: top;
+    text-align: justify;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+body { /* change the general color theme */
+  font-family: "Acherus Grotesque", "Times New Roman", Arial, serif;
+  color: white;
+  background-color: black; /* complementary colors: #21201E, #59606E */
+}
+
+a{ /* change the links color and decoration */
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    margin-left: 100px;
+    vertical-align: top;
+    text-align: center;
+}
+
+a:hover
+{
+    color: #C2331D;
+  /*font-size: 1.3em; I need to make it so this doesn't move the whole line */
+}
+
+a:focus /* When the visitor clicks the link */
+{
+    color: #F4364C;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid white;
+}
+
+caption{
+    caption-side: bottom;
+}
