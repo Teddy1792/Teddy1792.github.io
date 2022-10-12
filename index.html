@@ -13,6 +13,7 @@
 
         <title>le Monde Meta</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="Menu.js"></script>
     </head>
     
     <body>
@@ -26,16 +27,34 @@
             </div>
             <a name="top"></a>
         </header>
-        
+    <div class="container">
         <nav>   <!-- This is going to be the navigation menu; to be put on the left side of the page -->
             <ul>
-                <li>Romans</a></li>
-                <li><a href="nouvelles.html">Nouvelles</a></li>
-                <li><a href="Journal.html">Journal</a></li>
-                <li><a href="Divers.html">Divers</a></li>
+                <li class="menu">
+                    Romans
+                        <ul class="dropdown">
+                            <li><a href="lEauQuiMonte.html">L'eau qui monte</a></li>
+                            <li><a href="leSouffle.html">Le Souffle</a></li>
+                        </ul>
+                </li>
+                <li class="menu">
+                    Nouvelles
+                        <ul class="dropdown">
+                            <li><a href="fakeNews.html">Fake News</a></li>
+                            <li><a href="champignons.html">Les champignons de Paris</a></li>
+                        </ul>
+                </li>
+                <li class="menu">
+                    Journal
+                        <ul class="dropdown">
+                            <li><a href="journalPartie1.html">Partie 1</a></li>
+                            <li><a href="journalPartie2.html">Partie 2</a></li>
+                        </ul>
+                </li>
                 <li><a href="About.html">A propos</a></li>
             </ul>
         </nav>
+    </div>
         
         <section>
         <p>République est à bout de souffle. La Méditerranée s’assèche et se réchauffe : bientôt une soupe de cadavres.</p>

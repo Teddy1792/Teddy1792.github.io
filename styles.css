@@ -84,6 +84,18 @@ a:focus /* When the visitor clicks the link */
     color: #F4364C;
 }
 
+.dropdown{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+
+
+.menu:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .envoie{
     text-indent: 10%;
