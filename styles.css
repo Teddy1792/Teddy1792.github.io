@@ -36,12 +36,6 @@ nav{
     font-size: 1vw;
 }
 
-ul{
-    list-style: none;
-}
-
-
-
 section{
     display: inline-block;
     position: absolute;
@@ -52,15 +46,49 @@ section{
     font-size: 1vw;
 }
 
-h1, h2{
-    text-align: center;
-}
 
 body { /* change the general color theme */
   font-family: "Acherus Grotesque", "Times New Roman", Arial, serif;
   color: white;
   background-color: black; /* complementary colors: #21201E, #59606E */
 }
+
+
+
+/*
+ here it is dropleft menu
+ */
+ul{
+    list-style: none;
+}
+
+
+
+.dropleft{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.3s, opacity 0.3s linear, display 0s;
+    position: absolute;
+    left: 4em;
+    top: 0em;
+    width: 10em;
+}
+
+li.menu {
+    position: relative;
+}
+
+li.menu:hover .dropleft{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+/*
+ here it is dropleft menu
+ */
+
+
 
 a{ /* change the links color and decoration */
     color: white;
@@ -76,26 +104,12 @@ footer{
 a:hover
 {
     color: #C2331D;
-  /*font-size: 1.3em; I need to make it so this doesn't move the whole line */
 }
 
 a:focus /* When the visitor clicks the link */
 {
     color: #F4364C;
 }
-
-.dropdown{
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.2s;
-}
-
-
-.menu:hover .dropdown{
-    opacity: 1;
-    visibility: visible;
-}
-
 
 .envoie{
     text-indent: 10%;
@@ -158,10 +172,38 @@ a:focus /* When the visitor clicks the link */
     section{
         display: inline-block;
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 8%;
         right: 5%;
         text-align: justify;
         font-size: 4vw;
     }
+    
+    .dropleft{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.3s, opacity 0.3s linear, display 0s;
+        left: 0em;
+        top: 1.5em;
+    }
+    
+    ul .dropleft{
+        background-color: black;
+        z-index: 1;
+        border-width: 0.2em;
+        border: solid;
+        border-width: 2px;
+        border-color: #21201E;
+        padding-right: 0.2em;
+        padding-left: 0.3em;
+    }
+
+    li.menu:hover .dropleft{
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s linear;
+    }
+
+    
 }
+
