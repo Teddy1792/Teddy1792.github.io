@@ -5,10 +5,7 @@
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <!--[if lte IE 7]>
-        <link rel="stylesheet" href="style_ie.css" />
-        <![endif]-->
-        
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>le Monde Meta</title>
@@ -17,7 +14,6 @@
     
     <body>
         <header>
-            <!-- Put your header here -->
             <div id="banner_image">
                 <div id="banner_title">
                     <a href="index.html"><h1>Le Monde Meta</h1></a>
@@ -26,16 +22,32 @@
             </div>
             <a name="top"></a>
         </header>
-        
-        <nav>   <!-- This is going to be the navigation menu; to be put on the left side of the page -->
-            <ul>
-                <li>Romans</a></li>
-                <li><a href="nouvelles.html">Nouvelles</a></li>
-                <li><a href="Journal.html">Journal</a></li>
-                <li><a href="Divers.html">Divers</a></li>
-                <li><a href="About.html">A propos</a></li>
-            </ul>
+
+        <nav>   <!-- navigation menu -->
+                <ul>
+                <li class="menu"><a href="#">Romans</a>
+                    <ul class="dropleft">
+                        <li><a href="#">L'eau qui monte</a></li>
+                        <li><a href="#">Le Souffle</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">Nouvelles</a>
+                    <ul class="dropleft">
+                        <li><a href="#">Fake News</a></li>
+                        <li><a href="#">Les champignons de Paris</a></li>
+                        <li><a href="#">Pourquoi les oiseaux...</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a href="#">Journal</a>
+                    <ul class="dropleft">
+                        <li><a href="#">Partie 1</a></li>
+                        <li><a href="#">Partie 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">A propos</a></li>
+                </ul>
         </nav>
+
         
         <section>
         <p>République est à bout de souffle. La Méditerranée s’assèche et se réchauffe : bientôt une soupe de cadavres.</p>
